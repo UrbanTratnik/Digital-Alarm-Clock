@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Clock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock-container">
+            <!-- Alarm Display -->
+            <div id="alarmDisplay" class="alarm-display">
+                <div class="alarm-content">
+                    <div class="alarm-title">My Alarm:</div>
+                    <div class="alarm-time" id="alarmTimeDisplay">None</div>
+                </div>
+            </div>
+            
+        <div class="clock" id="clock">
+            <span class="time" id="hours">00</span>
+            <span class="separator">:</span>
+            <span class="time" id="minutes">00</span>
+            <span class="separator">:</span>
+            <span class="time" id="seconds">00</span>
+        </div>
+        <div class="button-container">
+            <button class="alarm-button">Set Alarm</button>
+            <button class="cancel-button">Cancel Alarm</button>
+        </div>
+    
+    </div>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <label for="hour">Hour:</label>
+      <select id="hour">
+          <!-- Options for hours -->
+          <!-- Using JavaScript to generate options dynamically -->
+      </select>
+      <label for="minute">Minute:</label>
+      <select id="minute">
+          <!-- Options for minutes -->
+          <!-- Using JavaScript to generate options dynamically -->
+      </select>
+      <br><br>
+      <div class="button-container">
+        <button class="save-button">Save</button>
+        <button class="cancelModal-button">Cancel</button> <!-- New Cancel button -->
+    </div>
+    </div>
+  </div>
+  <!-- Alarm Display -->
+
+<!-- Alarm Ringing Popup -->
+<div id="alarmPopup" class="alarm-popup">
+    <div class="alarm-popup-content">
+        <div class="alarm-message">ALARM IS RINGING</div>
+        <button class="snooze-button" onclick="snoozeAlarm()">Snooze</button>
+        <button class="stop-button" onclick="stopAlarm()">Stop Alarm</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+    
